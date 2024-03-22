@@ -1,0 +1,294 @@
+.Fondo{
+    background: rgb(188,111,255);
+    background: linear-gradient(0deg, rgba(188,111,255,1) 0%, rgba(121,207,228,1) 41%, rgba(188,111,255,1) 100%);
+    }
+    
+.FondoM{
+    background: rgb(188,111,255);
+background: linear-gradient(0deg, rgba(188,111,255,1) 0%, rgba(121,207,228,1) 41%, rgba(188,111,255,1) 100%);
+}
+
+.FondoL{
+    background: rgb(188,111,255);
+background: linear-gradient(0deg, rgba(188,111,255,1) 0%, rgba(121,207,228,1) 41%, rgba(188,111,255,1) 100%);
+}
+
+.titulo{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.titmusica{
+    font-family: Georgia;
+    color: rgb(173, 0, 72);
+    text-align: center;
+    line-height: 10px;
+}
+
+.titlibro{
+    font-family: Georgia;
+    color: rgb(114, 13, 89);
+    text-align: center;
+    line-height: 30px;
+}
+
+.titwitch{
+    font-family: Georgia;
+    color: rgb(114, 13, 89);
+    text-align: center;
+    line-height: 30px;
+}
+
+/*encabezado con imagen*/
+.textoencima{
+    position: absolute;
+    font-size: 50px;
+    font-family: 'lucida handwriting';
+    color: rgb(134, 11, 248);
+    text-align: center;
+    line-height: 20px;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nom2{
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(155, 51, 253);
+    top: 75%;
+    left: 49%;
+    transform: translate(-40%, -40%);
+}
+
+/*galeria de imagenes CherryNyx*/
+.imagen2 img{
+    width: 80%;
+}
+
+.galeria2{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+@media (min-width:100px){
+    .galeria2{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (min-width:520px){
+    .galeria2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* menu Cherry Nyx*/
+nav{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+    text-align: center;
+    vertical-align: top;
+    margin: 0 10px;
+}
+nav li{
+    list-style-type: none;
+    display: inline;
+}
+nav li a{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    text-decoration: none;
+    line-height: 60px;
+    padding: 15px 40px;
+    color: black;
+    background-color: rgb(212, 164, 245);
+    border: 1px solid grey;
+}
+nav li a:hover{
+    color: rgb(205, 118, 245);
+    background-color: black;
+}
+
+/*contenedor datos/imagen CherryNyx*/
+.imagen2{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    top: 5%;
+    left: 10%;
+    margin: 5px;
+    width: 90%;
+}
+
+.nomm{
+    color: rgb(74, 34, 168);
+    line-height: 50px;
+    font-size: 30px;
+    top: 30%;
+    left: 30%;
+    transform: translate(1%, -10%);
+    justify-content: center;
+}
+
+.datos{
+    padding: 15px;
+  text-align: left;
+  margin-top: -2%;
+}
+
+
+.Cont {
+    position: relative;
+    display: inline-block;
+    text-align: right;
+    top: 50%;
+    left: 20%;
+    margin: 5px;
+  }  
+  
+/*descripciones en las imagenes en musica*/  
+.desc {
+    padding: 5px;
+    text-align: left;
+    margin-top: -2%;
+    color: rgb(69, 0, 133);
+    font-family: fantasy;
+    font-size: 25px;
+  }
+
+  .descr{
+    color: rgb(20, 20, 20);
+    font-family: Georgia;
+    font-size: 20px;
+  }
+
+/* galeria de imagenes Musica/libros*/ 
+.imagen{
+    width: 90%;
+}
+.imagen img{
+    width: 90%;
+}
+
+.galeria{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+@media (min-width:100px){
+    .galeria{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (min-width:520px){
+    .galeria{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width:728px){
+    .galeria{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width:1024px){
+    .galeria{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/*segundo menu*/
+ul.breadcrumb {
+    padding: 8px 16px;
+    list-style: none;
+    background-color: rgb(188,111,255);
+}
+ul.breadcrumb li {display: inline;}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb a:link, ul.breadcrumb a:visited {
+    text-decoration:none;
+    color: black;
+}
+
+ul.breadcrumb li a.active {
+    color: #4CAF50;
+    font-weight: bold;
+}
+ul.breadcrumb li a.active:hover {
+    color: #397f3b;
+    font-weight: bold;
+}
+
+.imagen3{
+    position: relative;
+    text-align: left;
+    top: 30%;
+    left: 35%;
+    margin: 5px;
+    width: 35%;
+}
+
+.datos2{
+  vertical-align: middle;
+  margin: 10px;
+}
+
+.datos3{
+    vertical-align: middle;
+    margin-top: -2%;
+    
+  }
+
+  .imagen4{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    top: 20%;
+    left: 30%;
+    margin: 5px;
+    width: 35%;
+}
+
+.imgtwitch{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    top: 50%;
+    left: 32%;
+    margin: 5px;
+    width: 35%;
+}
+
+.descT{
+    color: rgb(20, 20, 20);
+    font-family: Georgia;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .imagen5{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    top: 10%;
+    left: 5%;
+    margin: 5px;
+    width: 50%;
+}
